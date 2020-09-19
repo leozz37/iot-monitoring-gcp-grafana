@@ -12,7 +12,19 @@ This is how our infrastructure works:
 
 ## Golang
 
-TODO:
+Running:
+
+```bash
+$ go run pubsub.go
+```
+
+Running Dockerfile:
+
+```bash
+$ docker build . -t metrics-exporter
+
+$ docker run -p 2112:2112 metrics-exporter
+```
 
 ## Prometheus
 
