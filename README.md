@@ -26,6 +26,15 @@ $ docker build . -t metrics-exporter
 $ docker run -p 2112:2112 metrics-exporter
 ```
 
+Deploying to Google Cloud Run:
+
+```bash
+$ gcloud builds submit --tag gcr.io/$PROJECT_ID/metrics-exporter
+
+$ gcloud run deploy metrics-exporter --image gcr.io/$PROJECT_ID/metrics-exporter --region $REGION --platform managed --allow-unauthenticated --port 2112
+```
+
+
 ## Prometheus
 
 Running Dockerfile:
