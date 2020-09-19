@@ -38,4 +38,10 @@ $ docker run -p 9090:9090 prometheus
 
 ## Grafana
 
-TODO:
+Running Dockerfile:
+
+```bash
+$ docker build . -t grafana
+
+$ docker run -p 3000:3000 grafana
+```
