@@ -28,7 +28,13 @@ $ docker run -p 2112:2112 metrics-exporter
 
 ## Prometheus
 
-TODO:
+Running Dockerfile:
+
+```bash
+$ docker build . -t prometheus
+
+$ docker run -p 9090:9090 prometheus
+```
 
 ## Grafana
 
