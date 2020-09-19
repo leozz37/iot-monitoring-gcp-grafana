@@ -62,3 +62,12 @@ $ docker build . -t grafana
 
 $ docker run -p 3000:3000 grafana
 ```
+
+Deploying to Google Cloud Run:
+
+```bash
+$ gcloud builds submit --tag gcr.io/$PROJECT_ID/grafana
+
+$ gcloud run deploy grafana --image gcr.io/$PROJECT_ID/grafana --region $REGION --platform managed --allow-unauthenticated --port 3000
+```
+
