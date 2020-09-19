@@ -36,6 +36,14 @@ $ docker build . -t prometheus
 $ docker run -p 9090:9090 prometheus
 ```
 
+Deploying to Google Cloud Run:
+
+```bash
+$ gcloud builds submit --tag gcr.io/$PROJECT_ID/prometheus
+
+$ gcloud run deploy prometheus --image gcr.io/$PROJECT_ID/prometheus --region $REGION --platform managed --allow-unauthenticated --port 9090
+```
+
 ## Grafana
 
 Running Dockerfile:
