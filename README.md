@@ -2,7 +2,7 @@
 
 ![cover](images/cover.png)
 
-This repostiry is a complement to my medium article. If you wanna follow step by step, check [my writing](https://medium.com/@leonardoaugusto287/monitoring-iot-devices-with-golang-google-cloud-platform-and-grafana-eb99cc36db4b).
+This repository is a complement to my medium article. If you wanna follow step by step, check [my writing](https://medium.com/@leonardoaugusto287/monitoring-iot-devices-with-golang-google-cloud-platform-and-grafana-eb99cc36db4b).
 
 ## Architecture
 
