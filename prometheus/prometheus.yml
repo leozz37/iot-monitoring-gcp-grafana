@@ -4,9 +4,9 @@ global:
     external_labels:
       monitor: 'codelab-monitor'
   
-  scrape_configs:
-    - job_name: 'temperature'
-      scrape_interval: 5s
-      static_configs:
-      - targets:
-        - $GOLANG_SERVICE_URL
+scrape_configs:
+  - job_name: 'temperature'
+    scrape_interval: 5s
+    static_configs:
+    - targets:
+      - $GOLANG_SERVICE_URL
